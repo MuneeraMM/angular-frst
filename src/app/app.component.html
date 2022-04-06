@@ -1,0 +1,37 @@
+<!-- <h1 style="text-align: center;">Hi, Good evening {{ title }}</h1>
+<h1>Hi,  {{ data.tech1}}</h1>
+<h1 style="text-align: left;">Hello... {{ data.tech2 }}</h1>
+<h1 style="text-align: right;">I am {{ data.programlanguage }}</h1> -->
+
+<!-- <h1 style="text-align: center;">Event handling...{{ str }}</h1>
+<button (click)="mrnng()">Good morning</button>
+<button (click)="afternoon()">Good afternoon</button> -->
+
+<!-- <div><p>count......{{ count }}</p></div>
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button> -->
+
+<!-- <div><h2>Count.....{{ count }}</h2></div>
+<h3>Count number is: {{ evenodd }}</h3>
+
+<button (click)="increment()">Increment</button>
+<button (click)="decrement()">Decrement</button> -->
+
+<!-- <h1 style="text-align: center;">Two way data</h1>
+<div style="text-align: center;">
+    <input type="text" [(ngModel)]="count">{{count}}
+</div> -->
+
+<table style="border: 1px solid;">
+    <thead>
+        <th>name</th>
+        <th>price</th>
+    </thead>
+    <tbody *ngFor = "let item of fruits">
+        <tr *ngIf= "item.price >=200">
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+        </tr>
+
+    </tbody>
+</table>
